@@ -186,12 +186,12 @@ function setup() {
         }
       }
       document.getElementById("dayspickaxe").innerHTML = calculateDaysSince(
-        randomitems[0].shopHistory[randomitems[0].shopHistory.length - 1]
+        randomitems[1].shopHistory[randomitems[11].shopHistory.length - 1]
       );
       document.getElementById("totaldays").innerHTML =
         Number(document.getElementById("totaldays").innerHTML) +
         calculateDaysSince(
-          randomitems[0].shopHistory[randomitems[0].shopHistory.length - 1]
+          randomitems[1].shopHistory[randomitems[1].shopHistory.length - 1]
         );
       update();
     }
@@ -231,12 +231,12 @@ function setup() {
         }
       }
       document.getElementById("daysglider").innerHTML = calculateDaysSince(
-        randomitems[0].shopHistory[randomitems[0].shopHistory.length - 1]
+        randomitems[2].shopHistory[randomitems[2].shopHistory.length - 1]
       );
       document.getElementById("totaldays").innerHTML =
         Number(document.getElementById("totaldays").innerHTML) +
         calculateDaysSince(
-          randomitems[0].shopHistory[randomitems[0].shopHistory.length - 1]
+          randomitems[2].shopHistory[randomitems[2].shopHistory.length - 1]
         );
       update();
     }
@@ -276,12 +276,12 @@ function setup() {
         }
       }
       document.getElementById("daysemote").innerHTML = calculateDaysSince(
-        randomitems[0].shopHistory[randomitems[0].shopHistory.length - 1]
+        randomitems[3].shopHistory[randomitems[3].shopHistory.length - 1]
       );
       document.getElementById("totaldays").innerHTML =
         Number(document.getElementById("totaldays").innerHTML) +
         calculateDaysSince(
-          randomitems[0].shopHistory[randomitems[0].shopHistory.length - 1]
+          randomitems[3].shopHistory[randomitems[3].shopHistory.length - 1]
         );
       update();
     }
@@ -321,12 +321,12 @@ function setup() {
         }
       }
       document.getElementById("daysloadingscreen").innerHTML = calculateDaysSince(
-        randomitems[0].shopHistory[randomitems[0].shopHistory.length - 1]
+        randomitems[4].shopHistory[randomitems[4].shopHistory.length - 1]
       );
       document.getElementById("totaldays").innerHTML =
         Number(document.getElementById("totaldays").innerHTML) +
         calculateDaysSince(
-          randomitems[0].shopHistory[randomitems[0].shopHistory.length - 1]
+          randomitems[4].shopHistory[randomitems[4].shopHistory.length - 1]
         );
       update();
     }
@@ -366,12 +366,12 @@ function setup() {
         }
       }
       document.getElementById("daysbackbling").innerHTML = calculateDaysSince(
-        randomitems[0].shopHistory[randomitems[0].shopHistory.length - 1]
+        randomitems[5].shopHistory[randomitems[5].shopHistory.length - 1]
       );
       document.getElementById("totaldays").innerHTML =
         Number(document.getElementById("totaldays").innerHTML) +
         calculateDaysSince(
-          randomitems[0].shopHistory[randomitems[0].shopHistory.length - 1]
+          randomitems[5].shopHistory[randomitems[5].shopHistory.length - 1]
         );
       update();
     }
@@ -543,12 +543,12 @@ function update() {
         }
       }
       document.getElementById("dayspickaxe").innerHTML = calculateDaysSince(
-        randomitems[0].shopHistory[randomitems[0].shopHistory.length - 1]
+        randomitems[1].shopHistory[randomitems[1].shopHistory.length - 1]
       );
       document.getElementById("totaldays").innerHTML =
         Number(document.getElementById("totaldays").innerHTML) +
         calculateDaysSince(
-          randomitems[0].shopHistory[randomitems[0].shopHistory.length - 1]
+          randomitems[1].shopHistory[randomitems[1].shopHistory.length - 1]
         );
       update();
     }
@@ -588,12 +588,12 @@ function update() {
         }
       }
       document.getElementById("dayglider").innerHTML = calculateDaysSince(
-        randomitems[0].shopHistory[randomitems[0].shopHistory.length - 1]
+        randomitems[2].shopHistory[randomitems[2].shopHistory.length - 1]
       );
       document.getElementById("totaldays").innerHTML =
         Number(document.getElementById("totaldays").innerHTML) +
         calculateDaysSince(
-          randomitems[0].shopHistory[randomitems[0].shopHistory.length - 1]
+          randomitems[2].shopHistory[randomitems[2].shopHistory.length - 1]
         );
       update();
     }
@@ -633,12 +633,12 @@ function update() {
         }
       }
       document.getElementById("daysemote").innerHTML = calculateDaysSince(
-        randomitems[0].shopHistory[randomitems[0].shopHistory.length - 1]
+        randomitems[3].shopHistory[randomitems[3].shopHistory.length - 1]
       );
       document.getElementById("totaldays").innerHTML =
         Number(document.getElementById("totaldays").innerHTML) +
         calculateDaysSince(
-          randomitems[0].shopHistory[randomitems[0].shopHistory.length - 1]
+          randomitems[3].shopHistory[randomitems[3].shopHistory.length - 1]
         );
       update();
     }
@@ -680,12 +680,12 @@ function update() {
           }
         }
         document.getElementById("daysloadingscreen").innerHTML = calculateDaysSince(
-          randomitems[0].shopHistory[randomitems[0].shopHistory.length - 1]
+          randomitems[4].shopHistory[randomitems[4].shopHistory.length - 1]
         );
         document.getElementById("totaldays").innerHTML =
           Number(document.getElementById("totaldays").innerHTML) +
           calculateDaysSince(
-            randomitems[0].shopHistory[randomitems[0].shopHistory.length - 1]
+            randomitems[4].shopHistory[randomitems[4].shopHistory.length - 1]
           );
         update();
       }
@@ -727,12 +727,12 @@ function update() {
           }
         }
         document.getElementById("daysbackbling").innerHTML = calculateDaysSince(
-          randomitems[0].shopHistory[randomitems[0].shopHistory.length - 1]
+          randomitems[5].shopHistory[randomitems[5].shopHistory.length - 1]
         );
         document.getElementById("totaldays").innerHTML =
           Number(document.getElementById("totaldays").innerHTML) +
           calculateDaysSince(
-            randomitems[0].shopHistory[randomitems[0].shopHistory.length - 1]
+            randomitems[5].shopHistory[randomitems[5].shopHistory.length - 1]
           );
         update();
       }
