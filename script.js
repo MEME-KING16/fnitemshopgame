@@ -157,7 +157,7 @@ function setup() {
     if (!lockeditems.pickaxe) {
       lockeditems.pickaxe = true;
       document.getElementById("dayspickaxe").innerHTML = calculateDaysSince(
-        randomitems[1].shopHistory[randomitems[11].shopHistory.length - 1]
+        randomitems[1].shopHistory[randomitems[1].shopHistory.length - 1]
       );
       document.getElementById("totaldays").innerHTML =
         Number(document.getElementById("totaldays").innerHTML) +
