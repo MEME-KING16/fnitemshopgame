@@ -46,7 +46,7 @@ const calculateDaysSince = (lastSeenDate) => {
   const diffTime = Math.abs(today - lastSeen);
   const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
   return diffDays;
-};
+}; 
 
 function setup() {
   randomitems = [
