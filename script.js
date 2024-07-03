@@ -110,36 +110,6 @@ function setup() {
     e.preventDefault();
     if (!lockeditems.skin) {
       lockeditems.skin = true;
-      for (let index = 0; index < Object.keys(lockeditems).length; index++) {
-        if (
-          !(index === 0
-            ? lockeditems.skin
-            : index === 1
-            ? lockeditems.pickaxe
-            : index === 2
-            ? lockeditems.glider
-            : index === 3
-            ? lockeditems.emote
-            : index === 4
-            ? lockeditems.loadingScreen
-            : lockeditems.backbling)
-        ) {
-          randomitems[index] =
-            index === 0
-              ? skins[Math.floor(Math.random() * skins.length)]
-              : index === 1
-              ? pickaxes[Math.floor(Math.random() * pickaxes.length)]
-              : index === 2
-              ? gliders[Math.floor(Math.random() * gliders.length)]
-              : index === 3
-              ? emotes[Math.floor(Math.random() * emotes.length)]
-              : index === 4
-              ? loadingScreens[
-                  Math.floor(Math.random() * loadingScreens.length)
-                ]
-              : backblings[Math.floor(Math.random() * backblings.length)];
-        }
-      }
       document.getElementById("daysskin").innerHTML = calculateDaysSince(
         randomitems[0].shopHistory[randomitems[0].shopHistory.length - 1]
       );
@@ -148,13 +118,6 @@ function setup() {
         calculateDaysSince(
           randomitems[0].shopHistory[randomitems[0].shopHistory.length - 1]
         );
-      update();
-    }
-  });
-  document.getElementById("pickaxe").addEventListener("contextmenu", (e) => {
-    e.preventDefault();
-    if (!lockeditems.pickaxe) {
-      lockeditems.pickaxe = true;
       for (let index = 0; index < Object.keys(lockeditems).length; index++) {
         if (
           !(index === 0
@@ -185,6 +148,14 @@ function setup() {
               : backblings[Math.floor(Math.random() * backblings.length)];
         }
       }
+
+      update();
+    }
+  });
+  document.getElementById("pickaxe").addEventListener("contextmenu", (e) => {
+    e.preventDefault();
+    if (!lockeditems.pickaxe) {
+      lockeditems.pickaxe = true;
       document.getElementById("dayspickaxe").innerHTML = calculateDaysSince(
         randomitems[1].shopHistory[randomitems[11].shopHistory.length - 1]
       );
@@ -193,13 +164,6 @@ function setup() {
         calculateDaysSince(
           randomitems[1].shopHistory[randomitems[1].shopHistory.length - 1]
         );
-      update();
-    }
-  });
-  document.getElementById("glider").addEventListener("contextmenu", (e) => {
-    e.preventDefault();
-    if (!lockeditems.glider) {
-      lockeditems.glider = true;
       for (let index = 0; index < Object.keys(lockeditems).length; index++) {
         if (
           !(index === 0
@@ -230,6 +194,14 @@ function setup() {
               : backblings[Math.floor(Math.random() * backblings.length)];
         }
       }
+
+      update();
+    }
+  });
+  document.getElementById("glider").addEventListener("contextmenu", (e) => {
+    e.preventDefault();
+    if (!lockeditems.glider) {
+      lockeditems.glider = true;
       document.getElementById("daysglider").innerHTML = calculateDaysSince(
         randomitems[2].shopHistory[randomitems[2].shopHistory.length - 1]
       );
@@ -238,13 +210,6 @@ function setup() {
         calculateDaysSince(
           randomitems[2].shopHistory[randomitems[2].shopHistory.length - 1]
         );
-      update();
-    }
-  });
-  document.getElementById("emote").addEventListener("contextmenu", (e) => {
-    e.preventDefault();
-    if (!lockeditems.emote) {
-      lockeditems.emote = true;
       for (let index = 0; index < Object.keys(lockeditems).length; index++) {
         if (
           !(index === 0
@@ -275,6 +240,14 @@ function setup() {
               : backblings[Math.floor(Math.random() * backblings.length)];
         }
       }
+
+      update();
+    }
+  });
+  document.getElementById("emote").addEventListener("contextmenu", (e) => {
+    e.preventDefault();
+    if (!lockeditems.emote) {
+      lockeditems.emote = true;
       document.getElementById("daysemote").innerHTML = calculateDaysSince(
         randomitems[3].shopHistory[randomitems[3].shopHistory.length - 1]
       );
@@ -283,13 +256,6 @@ function setup() {
         calculateDaysSince(
           randomitems[3].shopHistory[randomitems[3].shopHistory.length - 1]
         );
-      update();
-    }
-  });
-  document.getElementById("loadingscreen").addEventListener("contextmenu", (e) => {
-    e.preventDefault();
-    if (!lockeditems.loadingScreen) {
-      lockeditems.loadingScreen = true;
       for (let index = 0; index < Object.keys(lockeditems).length; index++) {
         if (
           !(index === 0
@@ -320,6 +286,14 @@ function setup() {
               : backblings[Math.floor(Math.random() * backblings.length)];
         }
       }
+
+      update();
+    }
+  });
+  document.getElementById("loadingscreen").addEventListener("contextmenu", (e) => {
+    e.preventDefault();
+    if (!lockeditems.loadingScreen) {
+      lockeditems.loadingScreen = true;
       document.getElementById("daysloadingscreen").innerHTML = calculateDaysSince(
         randomitems[4].shopHistory[randomitems[4].shopHistory.length - 1]
       );
@@ -328,13 +302,6 @@ function setup() {
         calculateDaysSince(
           randomitems[4].shopHistory[randomitems[4].shopHistory.length - 1]
         );
-      update();
-    }
-  });
-  document.getElementById("backbling").addEventListener("contextmenu", (e) => {
-    e.preventDefault();
-    if (!lockeditems.backbling) {
-      lockeditems.backbling = true;
       for (let index = 0; index < Object.keys(lockeditems).length; index++) {
         if (
           !(index === 0
@@ -365,6 +332,14 @@ function setup() {
               : backblings[Math.floor(Math.random() * backblings.length)];
         }
       }
+
+      update();
+    }
+  });
+  document.getElementById("backbling").addEventListener("contextmenu", (e) => {
+    e.preventDefault();
+    if (!lockeditems.backbling) {
+      lockeditems.backbling = true;
       document.getElementById("daysbackbling").innerHTML = calculateDaysSince(
         randomitems[5].shopHistory[randomitems[5].shopHistory.length - 1]
       );
@@ -373,6 +348,37 @@ function setup() {
         calculateDaysSince(
           randomitems[5].shopHistory[randomitems[5].shopHistory.length - 1]
         );
+      for (let index = 0; index < Object.keys(lockeditems).length; index++) {
+        if (
+          !(index === 0
+            ? lockeditems.skin
+            : index === 1
+            ? lockeditems.pickaxe
+            : index === 2
+            ? lockeditems.glider
+            : index === 3
+            ? lockeditems.emote
+            : index === 4
+            ? lockeditems.loadingScreen
+            : lockeditems.backbling)
+        ) {
+          randomitems[index] =
+            index === 0
+              ? skins[Math.floor(Math.random() * skins.length)]
+              : index === 1
+              ? pickaxes[Math.floor(Math.random() * pickaxes.length)]
+              : index === 2
+              ? gliders[Math.floor(Math.random() * gliders.length)]
+              : index === 3
+              ? emotes[Math.floor(Math.random() * emotes.length)]
+              : index === 4
+              ? loadingScreens[
+                  Math.floor(Math.random() * loadingScreens.length)
+                ]
+              : backblings[Math.floor(Math.random() * backblings.length)];
+        }
+      }
+
       update();
     }
   });
@@ -467,36 +473,6 @@ function update() {
     e.preventDefault();
     if (!lockeditems.skin) {
       lockeditems.skin = true;
-      for (let index = 0; index < Object.keys(lockeditems).length; index++) {
-        if (
-          !(index === 0
-            ? lockeditems.skin
-            : index === 1
-            ? lockeditems.pickaxe
-            : index === 2
-            ? lockeditems.glider
-            : index === 3
-            ? lockeditems.emote
-            : index === 4
-            ? lockeditems.loadingScreen
-            : lockeditems.backbling)
-        ) {
-          randomitems[index] =
-            index === 0
-              ? skins[Math.floor(Math.random() * skins.length)]
-              : index === 1
-              ? pickaxes[Math.floor(Math.random() * pickaxes.length)]
-              : index === 2
-              ? gliders[Math.floor(Math.random() * gliders.length)]
-              : index === 3
-              ? emotes[Math.floor(Math.random() * emotes.length)]
-              : index === 4
-              ? loadingScreens[
-                  Math.floor(Math.random() * loadingScreens.length)
-                ]
-              : backblings[Math.floor(Math.random() * backblings.length)];
-        }
-      }
       document.getElementById("daysskin").innerHTML = calculateDaysSince(
         randomitems[0].shopHistory[randomitems[0].shopHistory.length - 1]
       );
@@ -505,13 +481,6 @@ function update() {
         calculateDaysSince(
           randomitems[0].shopHistory[randomitems[0].shopHistory.length - 1]
         );
-      update();
-    }
-  });
-  document.getElementById("pickaxe").addEventListener("contextmenu", (e) => {
-    e.preventDefault();
-    if (!lockeditems.pickaxe) {
-      lockeditems.pickaxe = true;
       for (let index = 0; index < Object.keys(lockeditems).length; index++) {
         if (
           !(index === 0
@@ -542,6 +511,14 @@ function update() {
               : backblings[Math.floor(Math.random() * backblings.length)];
         }
       }
+
+      update();
+    }
+  });
+  document.getElementById("pickaxe").addEventListener("contextmenu", (e) => {
+    e.preventDefault();
+    if (!lockeditems.pickaxe) {
+      lockeditems.pickaxe = true;
       document.getElementById("dayspickaxe").innerHTML = calculateDaysSince(
         randomitems[1].shopHistory[randomitems[1].shopHistory.length - 1]
       );
@@ -550,13 +527,6 @@ function update() {
         calculateDaysSince(
           randomitems[1].shopHistory[randomitems[1].shopHistory.length - 1]
         );
-      update();
-    }
-  });
-  document.getElementById("glider").addEventListener("contextmenu", (e) => {
-    e.preventDefault();
-    if (!lockeditems.glider) {
-      lockeditems.glider = true;
       for (let index = 0; index < Object.keys(lockeditems).length; index++) {
         if (
           !(index === 0
@@ -587,6 +557,14 @@ function update() {
               : backblings[Math.floor(Math.random() * backblings.length)];
         }
       }
+
+      update();
+    }
+  });
+  document.getElementById("glider").addEventListener("contextmenu", (e) => {
+    e.preventDefault();
+    if (!lockeditems.glider) {
+      lockeditems.glider = true;
       document.getElementById("dayglider").innerHTML = calculateDaysSince(
         randomitems[2].shopHistory[randomitems[2].shopHistory.length - 1]
       );
@@ -595,13 +573,6 @@ function update() {
         calculateDaysSince(
           randomitems[2].shopHistory[randomitems[2].shopHistory.length - 1]
         );
-      update();
-    }
-  });
-  document.getElementById("emote").addEventListener("contextmenu", (e) => {
-    e.preventDefault();
-    if (!lockeditems.emote) {
-      lockeditems.emote = true;
       for (let index = 0; index < Object.keys(lockeditems).length; index++) {
         if (
           !(index === 0
@@ -632,6 +603,14 @@ function update() {
               : backblings[Math.floor(Math.random() * backblings.length)];
         }
       }
+
+      update();
+    }
+  });
+  document.getElementById("emote").addEventListener("contextmenu", (e) => {
+    e.preventDefault();
+    if (!lockeditems.emote) {
+      lockeditems.emote = true;
       document.getElementById("daysemote").innerHTML = calculateDaysSince(
         randomitems[3].shopHistory[randomitems[3].shopHistory.length - 1]
       );
@@ -640,6 +619,37 @@ function update() {
         calculateDaysSince(
           randomitems[3].shopHistory[randomitems[3].shopHistory.length - 1]
         );
+      for (let index = 0; index < Object.keys(lockeditems).length; index++) {
+        if (
+          !(index === 0
+            ? lockeditems.skin
+            : index === 1
+            ? lockeditems.pickaxe
+            : index === 2
+            ? lockeditems.glider
+            : index === 3
+            ? lockeditems.emote
+            : index === 4
+            ? lockeditems.loadingScreen
+            : lockeditems.backbling)
+        ) {
+          randomitems[index] =
+            index === 0
+              ? skins[Math.floor(Math.random() * skins.length)]
+              : index === 1
+              ? pickaxes[Math.floor(Math.random() * pickaxes.length)]
+              : index === 2
+              ? gliders[Math.floor(Math.random() * gliders.length)]
+              : index === 3
+              ? emotes[Math.floor(Math.random() * emotes.length)]
+              : index === 4
+              ? loadingScreens[
+                  Math.floor(Math.random() * loadingScreens.length)
+                ]
+              : backblings[Math.floor(Math.random() * backblings.length)];
+        }
+      }
+
       update();
     }
   });
@@ -649,6 +659,14 @@ function update() {
       e.preventDefault();
       if (!lockeditems.loadingScreen) {
         lockeditems.loadingScreen = true;
+        document.getElementById("daysloadingscreen").innerHTML = calculateDaysSince(
+            randomitems[4].shopHistory[randomitems[4].shopHistory.length - 1]
+          );
+          document.getElementById("totaldays").innerHTML =
+            Number(document.getElementById("totaldays").innerHTML) +
+            calculateDaysSince(
+              randomitems[4].shopHistory[randomitems[4].shopHistory.length - 1]
+            );
         for (let index = 0; index < Object.keys(lockeditems).length; index++) {
           if (
             !(index === 0
@@ -679,14 +697,7 @@ function update() {
                 : backblings[Math.floor(Math.random() * backblings.length)];
           }
         }
-        document.getElementById("daysloadingscreen").innerHTML = calculateDaysSince(
-          randomitems[4].shopHistory[randomitems[4].shopHistory.length - 1]
-        );
-        document.getElementById("totaldays").innerHTML =
-          Number(document.getElementById("totaldays").innerHTML) +
-          calculateDaysSince(
-            randomitems[4].shopHistory[randomitems[4].shopHistory.length - 1]
-          );
+
         update();
       }
     });
@@ -696,6 +707,14 @@ function update() {
       e.preventDefault();
       if (!lockeditems.backbling) {
         lockeditems.backbling = true;
+        document.getElementById("daysbackbling").innerHTML = calculateDaysSince(
+            randomitems[5].shopHistory[randomitems[5].shopHistory.length - 1]
+          );
+          document.getElementById("totaldays").innerHTML =
+            Number(document.getElementById("totaldays").innerHTML) +
+            calculateDaysSince(
+              randomitems[5].shopHistory[randomitems[5].shopHistory.length - 1]
+            );
         for (let index = 0; index < Object.keys(lockeditems).length; index++) {
           if (
             !(index === 0
@@ -726,14 +745,7 @@ function update() {
                 : backblings[Math.floor(Math.random() * backblings.length)];
           }
         }
-        document.getElementById("daysbackbling").innerHTML = calculateDaysSince(
-          randomitems[5].shopHistory[randomitems[5].shopHistory.length - 1]
-        );
-        document.getElementById("totaldays").innerHTML =
-          Number(document.getElementById("totaldays").innerHTML) +
-          calculateDaysSince(
-            randomitems[5].shopHistory[randomitems[5].shopHistory.length - 1]
-          );
+        
         update();
       }
     });
